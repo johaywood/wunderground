@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/default_api_key/alerts/q/10001.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wunderground.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.029'
+      Last-Modified:
+      - Tue, 22 Mar 2016 19:15:27 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 22 Mar 2016 19:15:27 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Tue, 22 Mar 2016 19:15:27 GMT
+      Content-Length:
+      - '2663'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1458674127:11802:365-dell-c16; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"alerts\": 1\n  }\n\t}\n\t\t,\"query_zone\": \"072\",\n\t\"alerts\":
+        [\n\t\t{\n\t\t\"type\": \"SPE\",\n\t\t\"description\": \"Special Statement\",\n\t\t\"date\":
+        \"9:50 am EDT on March 22, 2016\",\n\t\t\"date_epoch\": \"1458654600\",\n\t\t\"expires\":
+        \"7:00 PM EDT on March 22, 2016\",\n\t\t\"expires_epoch\": \"1458687600\",\n\t\t\"tz_short\":\"EDT\",\n\t\t\"tz_long\":\"America/New_York\",\n\t\t\"message\":
+        \"\\u000A...An elevated risk for spread of brush fires through this\\u000Aafternoon...\\u000A\\u000AGusty
+        winds up to 25 mph...along with relative humidity values of\\u000A25-30 percent...and
+        drying fine fuels will lead to an elevated\\u000Arisk for the spread of brush
+        fires through this afternoon.\\u000A\\u000APlease visit your state forestry
+        or environmental protection\\u000Awebsite for more information about wildfire
+        danger...burn\\u000Arestrictions...wildfire prevention and education.\\u000A\\u000AIf
+        you see smoke...call 911. \\u000A\\u000A\\u000A\\u000A950 am EDT Tue Mar 22
+        2016\\u000A\\u000A...An elevated risk for spread of brush fires through this\\u000Aafternoon...\\u000A\\u000AGusty
+        winds up to 25 mph...along with relative humidity values of\\u000A25-30 percent...and
+        drying fine fuels will lead to an elevated\\u000Arisk for the spread of brush
+        fires through this afternoon.\\u000A\\u000APlease visit your state forestry
+        or environmental protection\\u000Awebsite for more information about wildfire
+        danger...burn\\u000Arestrictions...wildfire prevention and education.\\u000A\\u000AIf
+        you see smoke...call 911. \\u000A\\u000A\\u000A\",\n\t\t\"phenomena\": \"SP\",\n\t\t\"significance\":
+        \"S\",\n\t\t\"ZONES\": [\n\t\t{\n\t\t\"state\":\"CT\",\n\t\t\"ZONE\":\"005\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"CT\",\n\t\t\"ZONE\":\"006\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"CT\",\n\t\t\"ZONE\":\"009\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NJ\",\n\t\t\"ZONE\":\"002\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NJ\",\n\t\t\"ZONE\":\"004\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NJ\",\n\t\t\"ZONE\":\"006\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NJ\",\n\t\t\"ZONE\":\"103\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NJ\",\n\t\t\"ZONE\":\"104\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NJ\",\n\t\t\"ZONE\":\"105\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NJ\",\n\t\t\"ZONE\":\"106\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NJ\",\n\t\t\"ZONE\":\"107\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NJ\",\n\t\t\"ZONE\":\"108\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"067\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"068\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"069\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"070\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"071\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"072\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"073\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"074\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"075\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"176\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"state\":\"NY\",\n\t\t\"ZONE\":\"177\"\n\t\t}\n\t\t],\n\t\t\"StormBased\":
+        {\n\t\t}\n\t\t}\n\t]\n}\n"
+    http_version:
+  recorded_at: Tue, 22 Mar 2016 19:15:27 GMT
+recorded_with: VCR 3.0.1

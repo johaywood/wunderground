@@ -1,0 +1,743 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/default_api_key/hourly/q/10001.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wunderground.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.124'
+      Last-Modified:
+      - Tue, 22 Mar 2016 19:15:30 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 22 Mar 2016 19:15:30 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Tue, 22 Mar 2016 19:15:30 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+      Set-Cookie:
+      - DT=1458674130:3861:365-y5; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
+        domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"hourly\": 1\n  }\n\t}\n\t\t,\n\t\"hourly_forecast\":
+        [\n\t\t{\n\t\t\"FCTTIME\": {\n\t\t\"hour\": \"16\",\"hour_padded\": \"16\",\"min\":
+        \"00\",\"min_unpadded\": \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\":
+        \"3\",\"mon_padded\": \"03\",\"mon_abbrev\": \"Mar\",\"mday\": \"22\",\"mday_padded\":
+        \"22\",\"yday\": \"81\",\"isdst\": \"1\",\"epoch\": \"1458676800\",\"pretty\":
+        \"4:00 PM EDT on March 22, 2016\",\"civil\": \"4:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\":
+        \"Mar\",\"weekday_name\": \"Tuesday\",\"weekday_name_night\": \"Tuesday Night\",\"weekday_name_abbrev\":
+        \"Tue\",\"weekday_name_unlang\": \"Tuesday\",\"weekday_name_night_unlang\":
+        \"Tuesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"54\", \"metric\": \"12\"},\n\t\t\"dewpoint\":
+        {\"english\": \"22\", \"metric\": \"-6\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"7\",\n\t\t\"wspd\": {\"english\": \"11\", \"metric\":
+        \"18\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"216\"},\n\t\t\"wx\":
+        \"Sunny\",\n\t\t\"uvi\": \"2\",\n\t\t\"humidity\": \"28\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"54\",
+        \"metric\": \"12\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"30.08\", \"metric\": \"1019\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"17\",\"hour_padded\": \"17\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"22\",\"mday_padded\": \"22\",\"yday\": \"81\",\"isdst\":
+        \"1\",\"epoch\": \"1458680400\",\"pretty\": \"5:00 PM EDT on March 22, 2016\",\"civil\":
+        \"5:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Tuesday\",\"weekday_name_night\": \"Tuesday Night\",\"weekday_name_abbrev\":
+        \"Tue\",\"weekday_name_unlang\": \"Tuesday\",\"weekday_name_night_unlang\":
+        \"Tuesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"55\", \"metric\": \"13\"},\n\t\t\"dewpoint\":
+        {\"english\": \"24\", \"metric\": \"-4\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"14\",\n\t\t\"wspd\": {\"english\": \"12\", \"metric\":
+        \"19\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"209\"},\n\t\t\"wx\":
+        \"Sunny\",\n\t\t\"uvi\": \"1\",\n\t\t\"humidity\": \"30\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"55\",
+        \"metric\": \"13\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"30.07\", \"metric\": \"1018\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"18\",\"hour_padded\": \"18\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"22\",\"mday_padded\": \"22\",\"yday\": \"81\",\"isdst\":
+        \"1\",\"epoch\": \"1458684000\",\"pretty\": \"6:00 PM EDT on March 22, 2016\",\"civil\":
+        \"6:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Tuesday\",\"weekday_name_night\": \"Tuesday Night\",\"weekday_name_abbrev\":
+        \"Tue\",\"weekday_name_unlang\": \"Tuesday\",\"weekday_name_night_unlang\":
+        \"Tuesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"54\", \"metric\": \"12\"},\n\t\t\"dewpoint\":
+        {\"english\": \"28\", \"metric\": \"-2\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"20\",\n\t\t\"wspd\": {\"english\": \"11\", \"metric\":
+        \"18\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"205\"},\n\t\t\"wx\":
+        \"Mostly Sunny\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"36\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"54\",
+        \"metric\": \"12\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"30.05\", \"metric\": \"1018\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"19\",\"hour_padded\": \"19\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"22\",\"mday_padded\": \"22\",\"yday\": \"81\",\"isdst\":
+        \"1\",\"epoch\": \"1458687600\",\"pretty\": \"7:00 PM EDT on March 22, 2016\",\"civil\":
+        \"7:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Tuesday\",\"weekday_name_night\": \"Tuesday Night\",\"weekday_name_abbrev\":
+        \"Tue\",\"weekday_name_unlang\": \"Tuesday\",\"weekday_name_night_unlang\":
+        \"Tuesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"52\", \"metric\": \"11\"},\n\t\t\"dewpoint\":
+        {\"english\": \"29\", \"metric\": \"-2\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"28\",\n\t\t\"wspd\": {\"english\": \"10\", \"metric\":
+        \"16\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"203\"},\n\t\t\"wx\":
+        \"Mostly Sunny\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"40\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"52\",
+        \"metric\": \"11\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"30.05\", \"metric\": \"1018\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"20\",\"hour_padded\": \"20\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"22\",\"mday_padded\": \"22\",\"yday\": \"81\",\"isdst\":
+        \"1\",\"epoch\": \"1458691200\",\"pretty\": \"8:00 PM EDT on March 22, 2016\",\"civil\":
+        \"8:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Tuesday\",\"weekday_name_night\": \"Tuesday Night\",\"weekday_name_abbrev\":
+        \"Tue\",\"weekday_name_unlang\": \"Tuesday\",\"weekday_name_night_unlang\":
+        \"Tuesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"51\", \"metric\": \"11\"},\n\t\t\"dewpoint\":
+        {\"english\": \"30\", \"metric\": \"-1\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"30\",\n\t\t\"wspd\": {\"english\": \"12\", \"metric\":
+        \"19\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"202\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"45\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"51\",
+        \"metric\": \"11\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"30.04\", \"metric\": \"1017\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"21\",\"hour_padded\": \"21\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"22\",\"mday_padded\": \"22\",\"yday\": \"81\",\"isdst\":
+        \"1\",\"epoch\": \"1458694800\",\"pretty\": \"9:00 PM EDT on March 22, 2016\",\"civil\":
+        \"9:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Tuesday\",\"weekday_name_night\": \"Tuesday Night\",\"weekday_name_abbrev\":
+        \"Tue\",\"weekday_name_unlang\": \"Tuesday\",\"weekday_name_night_unlang\":
+        \"Tuesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"50\", \"metric\": \"10\"},\n\t\t\"dewpoint\":
+        {\"english\": \"32\", \"metric\": \"0\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"38\",\n\t\t\"wspd\": {\"english\": \"12\", \"metric\":
+        \"19\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"198\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"50\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"50\",
+        \"metric\": \"10\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"30.05\", \"metric\": \"1018\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"22\",\"hour_padded\": \"22\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"22\",\"mday_padded\": \"22\",\"yday\": \"81\",\"isdst\":
+        \"1\",\"epoch\": \"1458698400\",\"pretty\": \"10:00 PM EDT on March 22, 2016\",\"civil\":
+        \"10:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Tuesday\",\"weekday_name_night\": \"Tuesday Night\",\"weekday_name_abbrev\":
+        \"Tue\",\"weekday_name_unlang\": \"Tuesday\",\"weekday_name_night_unlang\":
+        \"Tuesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"49\", \"metric\": \"9\"},\n\t\t\"dewpoint\":
+        {\"english\": \"35\", \"metric\": \"2\"},\n\t\t\"condition\": \"Mostly Cloudy\",\n\t\t\"icon\":
+        \"mostlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif\",\n\t\t\"fctcode\":
+        \"3\",\n\t\t\"sky\": \"76\",\n\t\t\"wspd\": {\"english\": \"12\", \"metric\":
+        \"19\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"199\"},\n\t\t\"wx\":
+        \"Mostly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"58\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"49\",
+        \"metric\": \"9\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"30.04\", \"metric\": \"1017\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"23\",\"hour_padded\": \"23\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"22\",\"mday_padded\": \"22\",\"yday\": \"81\",\"isdst\":
+        \"1\",\"epoch\": \"1458702000\",\"pretty\": \"11:00 PM EDT on March 22, 2016\",\"civil\":
+        \"11:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Tuesday\",\"weekday_name_night\": \"Tuesday Night\",\"weekday_name_abbrev\":
+        \"Tue\",\"weekday_name_unlang\": \"Tuesday\",\"weekday_name_night_unlang\":
+        \"Tuesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"49\", \"metric\": \"9\"},\n\t\t\"dewpoint\":
+        {\"english\": \"36\", \"metric\": \"2\"},\n\t\t\"condition\": \"Overcast\",\n\t\t\"icon\":
+        \"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_cloudy.gif\",\n\t\t\"fctcode\":
+        \"4\",\n\t\t\"sky\": \"90\",\n\t\t\"wspd\": {\"english\": \"13\", \"metric\":
+        \"21\"},\n\t\t\"wdir\": {\"dir\": \"S\", \"degrees\": \"188\"},\n\t\t\"wx\":
+        \"Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"61\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"49\",
+        \"metric\": \"9\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"30.03\", \"metric\": \"1017\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"0\",\"hour_padded\": \"00\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458705600\",\"pretty\": \"12:00 AM EDT on March 23, 2016\",\"civil\":
+        \"12:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"49\", \"metric\": \"9\"},\n\t\t\"dewpoint\":
+        {\"english\": \"36\", \"metric\": \"2\"},\n\t\t\"condition\": \"Overcast\",\n\t\t\"icon\":
+        \"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_cloudy.gif\",\n\t\t\"fctcode\":
+        \"4\",\n\t\t\"sky\": \"80\",\n\t\t\"wspd\": {\"english\": \"13\", \"metric\":
+        \"21\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"196\"},\n\t\t\"wx\":
+        \"Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"60\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"49\",
+        \"metric\": \"9\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"30.02\", \"metric\": \"1017\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"1\",\"hour_padded\": \"01\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458709200\",\"pretty\": \"1:00 AM EDT on March 23, 2016\",\"civil\":
+        \"1:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"49\", \"metric\": \"9\"},\n\t\t\"dewpoint\":
+        {\"english\": \"36\", \"metric\": \"2\"},\n\t\t\"condition\": \"Mostly Cloudy\",\n\t\t\"icon\":
+        \"mostlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif\",\n\t\t\"fctcode\":
+        \"3\",\n\t\t\"sky\": \"65\",\n\t\t\"wspd\": {\"english\": \"13\", \"metric\":
+        \"21\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"203\"},\n\t\t\"wx\":
+        \"Mostly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"61\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"49\",
+        \"metric\": \"9\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"30.0\", \"metric\": \"1016\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"2\",\"hour_padded\": \"02\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458712800\",\"pretty\": \"2:00 AM EDT on March 23, 2016\",\"civil\":
+        \"2:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"49\", \"metric\": \"9\"},\n\t\t\"dewpoint\":
+        {\"english\": \"36\", \"metric\": \"2\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"55\",\n\t\t\"wspd\": {\"english\": \"12\", \"metric\":
+        \"19\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"208\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"61\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"49\",
+        \"metric\": \"9\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"29.98\", \"metric\": \"1015\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"3\",\"hour_padded\": \"03\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458716400\",\"pretty\": \"3:00 AM EDT on March 23, 2016\",\"civil\":
+        \"3:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"49\", \"metric\": \"9\"},\n\t\t\"dewpoint\":
+        {\"english\": \"36\", \"metric\": \"2\"},\n\t\t\"condition\": \"Mostly Cloudy\",\n\t\t\"icon\":
+        \"mostlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif\",\n\t\t\"fctcode\":
+        \"3\",\n\t\t\"sky\": \"73\",\n\t\t\"wspd\": {\"english\": \"11\", \"metric\":
+        \"18\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"212\"},\n\t\t\"wx\":
+        \"Mostly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"61\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"49\",
+        \"metric\": \"9\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"4\",\n\t\t\"mslp\":
+        {\"english\": \"29.97\", \"metric\": \"1015\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"4\",\"hour_padded\": \"04\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458720000\",\"pretty\": \"4:00 AM EDT on March 23, 2016\",\"civil\":
+        \"4:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"49\", \"metric\": \"9\"},\n\t\t\"dewpoint\":
+        {\"english\": \"37\", \"metric\": \"3\"},\n\t\t\"condition\": \"Overcast\",\n\t\t\"icon\":
+        \"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_cloudy.gif\",\n\t\t\"fctcode\":
+        \"4\",\n\t\t\"sky\": \"83\",\n\t\t\"wspd\": {\"english\": \"11\", \"metric\":
+        \"18\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"218\"},\n\t\t\"wx\":
+        \"Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"62\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"49\",
+        \"metric\": \"9\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"4\",\n\t\t\"mslp\":
+        {\"english\": \"29.95\", \"metric\": \"1014\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"5\",\"hour_padded\": \"05\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458723600\",\"pretty\": \"5:00 AM EDT on March 23, 2016\",\"civil\":
+        \"5:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"49\", \"metric\": \"9\"},\n\t\t\"dewpoint\":
+        {\"english\": \"37\", \"metric\": \"3\"},\n\t\t\"condition\": \"Overcast\",\n\t\t\"icon\":
+        \"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_cloudy.gif\",\n\t\t\"fctcode\":
+        \"4\",\n\t\t\"sky\": \"86\",\n\t\t\"wspd\": {\"english\": \"11\", \"metric\":
+        \"18\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"217\"},\n\t\t\"wx\":
+        \"Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"65\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"49\",
+        \"metric\": \"9\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"4\",\n\t\t\"mslp\":
+        {\"english\": \"29.95\", \"metric\": \"1014\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"6\",\"hour_padded\": \"06\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458727200\",\"pretty\": \"6:00 AM EDT on March 23, 2016\",\"civil\":
+        \"6:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"49\", \"metric\": \"9\"},\n\t\t\"dewpoint\":
+        {\"english\": \"37\", \"metric\": \"3\"},\n\t\t\"condition\": \"Overcast\",\n\t\t\"icon\":
+        \"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_cloudy.gif\",\n\t\t\"fctcode\":
+        \"4\",\n\t\t\"sky\": \"89\",\n\t\t\"wspd\": {\"english\": \"11\", \"metric\":
+        \"18\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"224\"},\n\t\t\"wx\":
+        \"Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"63\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"49\",
+        \"metric\": \"9\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"29.95\", \"metric\": \"1014\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"7\",\"hour_padded\": \"07\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458730800\",\"pretty\": \"7:00 AM EDT on March 23, 2016\",\"civil\":
+        \"7:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"49\", \"metric\": \"9\"},\n\t\t\"dewpoint\":
+        {\"english\": \"37\", \"metric\": \"3\"},\n\t\t\"condition\": \"Overcast\",\n\t\t\"icon\":
+        \"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/cloudy.gif\",\n\t\t\"fctcode\":
+        \"4\",\n\t\t\"sky\": \"92\",\n\t\t\"wspd\": {\"english\": \"11\", \"metric\":
+        \"18\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"223\"},\n\t\t\"wx\":
+        \"Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"64\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"49\",
+        \"metric\": \"9\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"29.95\", \"metric\": \"1014\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"8\",\"hour_padded\": \"08\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458734400\",\"pretty\": \"8:00 AM EDT on March 23, 2016\",\"civil\":
+        \"8:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"50\", \"metric\": \"10\"},\n\t\t\"dewpoint\":
+        {\"english\": \"38\", \"metric\": \"3\"},\n\t\t\"condition\": \"Overcast\",\n\t\t\"icon\":
+        \"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/cloudy.gif\",\n\t\t\"fctcode\":
+        \"4\",\n\t\t\"sky\": \"94\",\n\t\t\"wspd\": {\"english\": \"9\", \"metric\":
+        \"14\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"228\"},\n\t\t\"wx\":
+        \"Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"64\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"50\",
+        \"metric\": \"10\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"29.96\", \"metric\": \"1015\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"9\",\"hour_padded\": \"09\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458738000\",\"pretty\": \"9:00 AM EDT on March 23, 2016\",\"civil\":
+        \"9:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"52\", \"metric\": \"11\"},\n\t\t\"dewpoint\":
+        {\"english\": \"38\", \"metric\": \"3\"},\n\t\t\"condition\": \"Overcast\",\n\t\t\"icon\":
+        \"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/cloudy.gif\",\n\t\t\"fctcode\":
+        \"4\",\n\t\t\"sky\": \"90\",\n\t\t\"wspd\": {\"english\": \"9\", \"metric\":
+        \"14\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"226\"},\n\t\t\"wx\":
+        \"Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"60\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"52\",
+        \"metric\": \"11\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"29.96\", \"metric\": \"1015\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"10\",\"hour_padded\": \"10\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458741600\",\"pretty\": \"10:00 AM EDT on March 23, 2016\",\"civil\":
+        \"10:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"55\", \"metric\": \"13\"},\n\t\t\"dewpoint\":
+        {\"english\": \"39\", \"metric\": \"4\"},\n\t\t\"condition\": \"Overcast\",\n\t\t\"icon\":
+        \"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/cloudy.gif\",\n\t\t\"fctcode\":
+        \"4\",\n\t\t\"sky\": \"81\",\n\t\t\"wspd\": {\"english\": \"9\", \"metric\":
+        \"14\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"230\"},\n\t\t\"wx\":
+        \"Cloudy\",\n\t\t\"uvi\": \"1\",\n\t\t\"humidity\": \"55\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"55\",
+        \"metric\": \"13\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"29.97\", \"metric\": \"1015\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"11\",\"hour_padded\": \"11\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458745200\",\"pretty\": \"11:00 AM EDT on March 23, 2016\",\"civil\":
+        \"11:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"58\", \"metric\": \"14\"},\n\t\t\"dewpoint\":
+        {\"english\": \"39\", \"metric\": \"4\"},\n\t\t\"condition\": \"Mostly Cloudy\",\n\t\t\"icon\":
+        \"mostlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/mostlycloudy.gif\",\n\t\t\"fctcode\":
+        \"3\",\n\t\t\"sky\": \"74\",\n\t\t\"wspd\": {\"english\": \"10\", \"metric\":
+        \"16\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"234\"},\n\t\t\"wx\":
+        \"Mostly Cloudy\",\n\t\t\"uvi\": \"3\",\n\t\t\"humidity\": \"49\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"58\",
+        \"metric\": \"14\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"29.97\", \"metric\": \"1015\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"12\",\"hour_padded\": \"12\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458748800\",\"pretty\": \"12:00 PM EDT on March 23, 2016\",\"civil\":
+        \"12:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"61\", \"metric\": \"16\"},\n\t\t\"dewpoint\":
+        {\"english\": \"39\", \"metric\": \"4\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"51\",\n\t\t\"wspd\": {\"english\": \"10\", \"metric\":
+        \"16\"},\n\t\t\"wdir\": {\"dir\": \"WSW\", \"degrees\": \"239\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"4\",\n\t\t\"humidity\": \"45\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"61\",
+        \"metric\": \"16\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"29.96\", \"metric\": \"1015\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"13\",\"hour_padded\": \"13\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458752400\",\"pretty\": \"1:00 PM EDT on March 23, 2016\",\"civil\":
+        \"1:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"63\", \"metric\": \"17\"},\n\t\t\"dewpoint\":
+        {\"english\": \"38\", \"metric\": \"3\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"44\",\n\t\t\"wspd\": {\"english\": \"11\", \"metric\":
+        \"18\"},\n\t\t\"wdir\": {\"dir\": \"WSW\", \"degrees\": \"241\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"5\",\n\t\t\"humidity\": \"40\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"63\",
+        \"metric\": \"17\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"29.95\", \"metric\": \"1014\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"14\",\"hour_padded\": \"14\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458756000\",\"pretty\": \"2:00 PM EDT on March 23, 2016\",\"civil\":
+        \"2:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"65\", \"metric\": \"18\"},\n\t\t\"dewpoint\":
+        {\"english\": \"37\", \"metric\": \"3\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"51\",\n\t\t\"wspd\": {\"english\": \"11\", \"metric\":
+        \"18\"},\n\t\t\"wdir\": {\"dir\": \"WSW\", \"degrees\": \"248\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"4\",\n\t\t\"humidity\": \"35\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"65\",
+        \"metric\": \"18\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"29.95\", \"metric\": \"1014\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"15\",\"hour_padded\": \"15\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458759600\",\"pretty\": \"3:00 PM EDT on March 23, 2016\",\"civil\":
+        \"3:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"66\", \"metric\": \"19\"},\n\t\t\"dewpoint\":
+        {\"english\": \"38\", \"metric\": \"3\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"34\",\n\t\t\"wspd\": {\"english\": \"12\", \"metric\":
+        \"19\"},\n\t\t\"wdir\": {\"dir\": \"WSW\", \"degrees\": \"245\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"4\",\n\t\t\"humidity\": \"34\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"66\",
+        \"metric\": \"19\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"29.94\", \"metric\": \"1014\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"16\",\"hour_padded\": \"16\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458763200\",\"pretty\": \"4:00 PM EDT on March 23, 2016\",\"civil\":
+        \"4:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"68\", \"metric\": \"20\"},\n\t\t\"dewpoint\":
+        {\"english\": \"39\", \"metric\": \"4\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"23\",\n\t\t\"wspd\": {\"english\": \"11\", \"metric\":
+        \"18\"},\n\t\t\"wdir\": {\"dir\": \"WSW\", \"degrees\": \"245\"},\n\t\t\"wx\":
+        \"Mostly Sunny\",\n\t\t\"uvi\": \"2\",\n\t\t\"humidity\": \"35\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"68\",
+        \"metric\": \"20\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"29.93\", \"metric\": \"1014\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"17\",\"hour_padded\": \"17\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458766800\",\"pretty\": \"5:00 PM EDT on March 23, 2016\",\"civil\":
+        \"5:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"67\", \"metric\": \"19\"},\n\t\t\"dewpoint\":
+        {\"english\": \"40\", \"metric\": \"4\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"25\",\n\t\t\"wspd\": {\"english\": \"10\", \"metric\":
+        \"16\"},\n\t\t\"wdir\": {\"dir\": \"WSW\", \"degrees\": \"247\"},\n\t\t\"wx\":
+        \"Mostly Sunny\",\n\t\t\"uvi\": \"1\",\n\t\t\"humidity\": \"37\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"67\",
+        \"metric\": \"19\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"29.94\", \"metric\": \"1014\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"18\",\"hour_padded\": \"18\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458770400\",\"pretty\": \"6:00 PM EDT on March 23, 2016\",\"civil\":
+        \"6:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"65\", \"metric\": \"18\"},\n\t\t\"dewpoint\":
+        {\"english\": \"41\", \"metric\": \"5\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"16\",\n\t\t\"wspd\": {\"english\": \"8\", \"metric\":
+        \"13\"},\n\t\t\"wdir\": {\"dir\": \"WSW\", \"degrees\": \"246\"},\n\t\t\"wx\":
+        \"Sunny\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"41\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"65\",
+        \"metric\": \"18\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"29.95\", \"metric\": \"1014\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"19\",\"hour_padded\": \"19\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458774000\",\"pretty\": \"7:00 PM EDT on March 23, 2016\",\"civil\":
+        \"7:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"63\", \"metric\": \"17\"},\n\t\t\"dewpoint\":
+        {\"english\": \"41\", \"metric\": \"5\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"18\",\n\t\t\"wspd\": {\"english\": \"5\", \"metric\":
+        \"8\"},\n\t\t\"wdir\": {\"dir\": \"WSW\", \"degrees\": \"252\"},\n\t\t\"wx\":
+        \"Sunny\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"45\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"63\",
+        \"metric\": \"17\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"0\",\n\t\t\"mslp\":
+        {\"english\": \"29.97\", \"metric\": \"1015\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"20\",\"hour_padded\": \"20\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458777600\",\"pretty\": \"8:00 PM EDT on March 23, 2016\",\"civil\":
+        \"8:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"62\", \"metric\": \"17\"},\n\t\t\"dewpoint\":
+        {\"english\": \"42\", \"metric\": \"6\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"21\",\n\t\t\"wspd\": {\"english\": \"4\", \"metric\":
+        \"6\"},\n\t\t\"wdir\": {\"dir\": \"WSW\", \"degrees\": \"247\"},\n\t\t\"wx\":
+        \"Mostly Clear\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"49\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"62\",
+        \"metric\": \"17\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"1\",\n\t\t\"mslp\":
+        {\"english\": \"29.99\", \"metric\": \"1016\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"21\",\"hour_padded\": \"21\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458781200\",\"pretty\": \"9:00 PM EDT on March 23, 2016\",\"civil\":
+        \"9:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"60\", \"metric\": \"16\"},\n\t\t\"dewpoint\":
+        {\"english\": \"43\", \"metric\": \"6\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"24\",\n\t\t\"wspd\": {\"english\": \"4\", \"metric\":
+        \"6\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"225\"},\n\t\t\"wx\":
+        \"Mostly Clear\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"53\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"60\",
+        \"metric\": \"16\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"2\",\n\t\t\"mslp\":
+        {\"english\": \"30.01\", \"metric\": \"1016\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"22\",\"hour_padded\": \"22\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458784800\",\"pretty\": \"10:00 PM EDT on March 23, 2016\",\"civil\":
+        \"10:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"59\", \"metric\": \"15\"},\n\t\t\"dewpoint\":
+        {\"english\": \"43\", \"metric\": \"6\"},\n\t\t\"condition\": \"Clear\",\n\t\t\"icon\":
+        \"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"fctcode\":
+        \"1\",\n\t\t\"sky\": \"28\",\n\t\t\"wspd\": {\"english\": \"4\", \"metric\":
+        \"6\"},\n\t\t\"wdir\": {\"dir\": \"SW\", \"degrees\": \"216\"},\n\t\t\"wx\":
+        \"Mostly Clear\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"56\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"59\",
+        \"metric\": \"15\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"2\",\n\t\t\"mslp\":
+        {\"english\": \"30.02\", \"metric\": \"1017\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"23\",\"hour_padded\": \"23\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"23\",\"mday_padded\": \"23\",\"yday\": \"82\",\"isdst\":
+        \"1\",\"epoch\": \"1458788400\",\"pretty\": \"11:00 PM EDT on March 23, 2016\",\"civil\":
+        \"11:00 PM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Wednesday\",\"weekday_name_night\": \"Wednesday Night\",\"weekday_name_abbrev\":
+        \"Wed\",\"weekday_name_unlang\": \"Wednesday\",\"weekday_name_night_unlang\":
+        \"Wednesday Night\",\"ampm\": \"PM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"57\", \"metric\": \"14\"},\n\t\t\"dewpoint\":
+        {\"english\": \"44\", \"metric\": \"7\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"31\",\n\t\t\"wspd\": {\"english\": \"4\", \"metric\":
+        \"6\"},\n\t\t\"wdir\": {\"dir\": \"SSW\", \"degrees\": \"203\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"60\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"57\",
+        \"metric\": \"14\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"2\",\n\t\t\"mslp\":
+        {\"english\": \"30.03\", \"metric\": \"1017\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"0\",\"hour_padded\": \"00\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"24\",\"mday_padded\": \"24\",\"yday\": \"83\",\"isdst\":
+        \"1\",\"epoch\": \"1458792000\",\"pretty\": \"12:00 AM EDT on March 24, 2016\",\"civil\":
+        \"12:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Thursday\",\"weekday_name_night\": \"Thursday Night\",\"weekday_name_abbrev\":
+        \"Thu\",\"weekday_name_unlang\": \"Thursday\",\"weekday_name_night_unlang\":
+        \"Thursday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"56\", \"metric\": \"13\"},\n\t\t\"dewpoint\":
+        {\"english\": \"44\", \"metric\": \"7\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"33\",\n\t\t\"wspd\": {\"english\": \"2\", \"metric\":
+        \"3\"},\n\t\t\"wdir\": {\"dir\": \"W\", \"degrees\": \"264\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"63\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"56\",
+        \"metric\": \"13\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"2\",\n\t\t\"mslp\":
+        {\"english\": \"30.02\", \"metric\": \"1017\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"1\",\"hour_padded\": \"01\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"24\",\"mday_padded\": \"24\",\"yday\": \"83\",\"isdst\":
+        \"1\",\"epoch\": \"1458795600\",\"pretty\": \"1:00 AM EDT on March 24, 2016\",\"civil\":
+        \"1:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Thursday\",\"weekday_name_night\": \"Thursday Night\",\"weekday_name_abbrev\":
+        \"Thu\",\"weekday_name_unlang\": \"Thursday\",\"weekday_name_night_unlang\":
+        \"Thursday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"55\", \"metric\": \"13\"},\n\t\t\"dewpoint\":
+        {\"english\": \"44\", \"metric\": \"7\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"37\",\n\t\t\"wspd\": {\"english\": \"3\", \"metric\":
+        \"5\"},\n\t\t\"wdir\": {\"dir\": \"NE\", \"degrees\": \"35\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"66\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"55\",
+        \"metric\": \"13\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"2\",\n\t\t\"mslp\":
+        {\"english\": \"30.03\", \"metric\": \"1017\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"2\",\"hour_padded\": \"02\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"24\",\"mday_padded\": \"24\",\"yday\": \"83\",\"isdst\":
+        \"1\",\"epoch\": \"1458799200\",\"pretty\": \"2:00 AM EDT on March 24, 2016\",\"civil\":
+        \"2:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Thursday\",\"weekday_name_night\": \"Thursday Night\",\"weekday_name_abbrev\":
+        \"Thu\",\"weekday_name_unlang\": \"Thursday\",\"weekday_name_night_unlang\":
+        \"Thursday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"53\", \"metric\": \"12\"},\n\t\t\"dewpoint\":
+        {\"english\": \"43\", \"metric\": \"6\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"40\",\n\t\t\"wspd\": {\"english\": \"4\", \"metric\":
+        \"6\"},\n\t\t\"wdir\": {\"dir\": \"NNE\", \"degrees\": \"27\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"67\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"53\",
+        \"metric\": \"12\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"2\",\n\t\t\"mslp\":
+        {\"english\": \"30.02\", \"metric\": \"1017\"}\n\t\t}\n\t\t,\n\t\t{\n\t\t\"FCTTIME\":
+        {\n\t\t\"hour\": \"3\",\"hour_padded\": \"03\",\"min\": \"00\",\"min_unpadded\":
+        \"0\",\"sec\": \"0\",\"year\": \"2016\",\"mon\": \"3\",\"mon_padded\": \"03\",\"mon_abbrev\":
+        \"Mar\",\"mday\": \"24\",\"mday_padded\": \"24\",\"yday\": \"83\",\"isdst\":
+        \"1\",\"epoch\": \"1458802800\",\"pretty\": \"3:00 AM EDT on March 24, 2016\",\"civil\":
+        \"3:00 AM\",\"month_name\": \"March\",\"month_name_abbrev\": \"Mar\",\"weekday_name\":
+        \"Thursday\",\"weekday_name_night\": \"Thursday Night\",\"weekday_name_abbrev\":
+        \"Thu\",\"weekday_name_unlang\": \"Thursday\",\"weekday_name_night_unlang\":
+        \"Thursday Night\",\"ampm\": \"AM\",\"tz\": \"\",\"age\": \"\",\"UTCDATE\":
+        \"\"\n\t\t},\n\t\t\"temp\": {\"english\": \"52\", \"metric\": \"11\"},\n\t\t\"dewpoint\":
+        {\"english\": \"43\", \"metric\": \"6\"},\n\t\t\"condition\": \"Partly Cloudy\",\n\t\t\"icon\":
+        \"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"fctcode\":
+        \"2\",\n\t\t\"sky\": \"42\",\n\t\t\"wspd\": {\"english\": \"5\", \"metric\":
+        \"8\"},\n\t\t\"wdir\": {\"dir\": \"NNE\", \"degrees\": \"33\"},\n\t\t\"wx\":
+        \"Partly Cloudy\",\n\t\t\"uvi\": \"0\",\n\t\t\"humidity\": \"70\",\n\t\t\"windchill\":
+        {\"english\": \"-9999\", \"metric\": \"-9999\"},\n\t\t\"heatindex\": {\"english\":
+        \"-9999\", \"metric\": \"-9999\"},\n\t\t\"feelslike\": {\"english\": \"52\",
+        \"metric\": \"11\"},\n\t\t\"qpf\": {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"snow\":
+        {\"english\": \"0.0\", \"metric\": \"0\"},\n\t\t\"pop\": \"2\",\n\t\t\"mslp\":
+        {\"english\": \"30.02\", \"metric\": \"1017\"}\n\t\t}\n\t]\n}\n"
+    http_version:
+  recorded_at: Tue, 22 Mar 2016 19:15:30 GMT
+recorded_with: VCR 3.0.1

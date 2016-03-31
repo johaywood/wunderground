@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/default_api_key/astronomy/q/10001.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wunderground.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.019'
+      Last-Modified:
+      - Tue, 22 Mar 2016 19:15:28 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 22 Mar 2016 19:15:28 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Tue, 22 Mar 2016 19:15:28 GMT
+      Content-Length:
+      - '652'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1458674128:27866:365-dell-c3; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"astronomy\": 1\n  }\n\t}\n\t\t,\t\"moon_phase\": {\n\t\t\"percentIlluminated\":\"100\",\n\t\t\"ageOfMoon\":\"14\",\n\t\t\"phaseofMoon\":\"Full\",\n\t\t\"hemisphere\":\"North\",\n\t\t\"current_time\":
+        {\n\t\t\"hour\":\"15\",\n\t\t\"minute\":\"15\"\n\t\t},\n\t\t\"sunrise\": {\n\t\t\"hour\":\"6\",\n\t\t\"minute\":\"55\"\n\t\t},\n\t\t\"sunset\":
+        {\n\t\t\"hour\":\"19\",\n\t\t\"minute\":\"10\"\n\t\t},\n\t\t\"moonrise\":
+        {\n\t\t\"hour\":\"18\",\n\t\t\"minute\":\"35\"\n\t\t},\n\t\t\"moonset\": {\n\t\t\"hour\":\"6\",\n\t\t\"minute\":\"31\"\n\t\t}\n\t},\n\t\"sun_phase\":
+        {\n\t\t\"sunrise\": {\n\t\t\"hour\":\"6\",\n\t\t\"minute\":\"55\"\n\t\t},\n\t\t\"sunset\":
+        {\n\t\t\"hour\":\"19\",\n\t\t\"minute\":\"10\"\n\t\t}\n\t}\n}\n"
+    http_version:
+  recorded_at: Tue, 22 Mar 2016 19:15:28 GMT
+recorded_with: VCR 3.0.1

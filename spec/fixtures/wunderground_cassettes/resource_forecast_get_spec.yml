@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/default_api_key/forecast/q/10001.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wunderground.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.032'
+      Last-Modified:
+      - Tue, 22 Mar 2016 19:15:29 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 22 Mar 2016 19:15:29 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Tue, 22 Mar 2016 19:15:29 GMT
+      Content-Length:
+      - '7621'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1458674129:34945:365-dell-c14; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"forecast\": 1\n  }\n\t}\n\t\t,\n\t\"forecast\":{\n\t\t\"txt_forecast\":
+        {\n\t\t\"date\":\"1:50 PM EDT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Tuesday\",\n\t\t\"fcttext\":\"Plentiful
+        sunshine. High around 55F. Winds SSW at 10 to 15 mph.\",\n\t\t\"fcttext_metric\":\"Sunny.
+        High 13C. Winds SSW at 15 to 25 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":1,\n\t\t\"icon\":\"nt_mostlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif\",\n\t\t\"title\":\"Tuesday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies this evening will become overcast
+        overnight. Low 47F. Winds SSW at 10 to 20 mph.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy skies early will give way to cloudy skies late. Low 8C. Winds SSW at
+        15 to 30 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":2,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Cloudy
+        early with partial sunshine expected late. High 69F. Winds WSW at 10 to 15
+        mph.\",\n\t\t\"fcttext_metric\":\"Cloudy skies early, then partly cloudy in
+        the afternoon. High 21C. Winds WSW at 15 to 25 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":3,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Wednesday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies. Low 48F. Winds light and
+        variable.\",\n\t\t\"fcttext_metric\":\"A few clouds from time to time. Low
+        9C. Winds light and variable.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":4,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Thursday\",\n\t\t\"fcttext\":\"Intervals
+        of clouds and sunshine. High 66F. Winds E at 10 to 20 mph.\",\n\t\t\"fcttext_metric\":\"Intervals
+        of clouds and sunshine. High 19C. Winds E at 15 to 30 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":5,\n\t\t\"icon\":\"nt_rain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_rain.gif\",\n\t\t\"title\":\"Thursday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies early will give way to cloudy
+        skies and rain later during the night. Thunder is possible late. Low 56F.
+        Winds S at 10 to 20 mph. Chance of rain 90%.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy in the evening then becoming cloudy with periods of rain after midnight.
+        Thunder is possible late. Low 13C. Winds S at 15 to 30 km/h. Chance of rain
+        90%.\",\n\t\t\"pop\":\"90\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":6,\n\t\t\"icon\":\"rain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/rain.gif\",\n\t\t\"title\":\"Friday\",\n\t\t\"fcttext\":\"Rain
+        early. A mix of sun and clouds in the afternoon. Thunder is possible early.
+        High 64F. Winds SW at 10 to 20 mph. Chance of rain 90%.\",\n\t\t\"fcttext_metric\":\"Becoming
+        partly cloudy after some morning rain. Thunder is possible early. High 18C.
+        Winds SW at 15 to 30 km/h. Chance of rain 90%.\",\n\t\t\"pop\":\"90\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":7,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Friday
+        Night\",\n\t\t\"fcttext\":\"Clear to partly cloudy. Low 41F. Winds NNW at
+        10 to 15 mph.\",\n\t\t\"fcttext_metric\":\"Clear to partly cloudy. Low near
+        5C. Winds NNW at 15 to 25 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t]\n\t\t},\n\t\t\"simpleforecast\":
+        {\n\t\t\"forecastday\": [\n\t\t{\"date\":{\n\t\"epoch\":\"1458687600\",\n\t\"pretty\":\"7:00
+        PM EDT on March 22, 2016\",\n\t\"day\":22,\n\t\"month\":3,\n\t\"year\":2016,\n\t\"yday\":81,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"March\",\n\t\"monthname_short\":\"Mar\",\n\t\"weekday_short\":\"Tue\",\n\t\"weekday\":\"Tuesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"EDT\",\n\t\"tz_long\":\"America/New_York\"\n},\n\t\t\"period\":1,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"55\",\n\t\t\"celsius\":\"13\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"47\",\n\t\t\"celsius\":\"8\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":0,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"SSW\",\n\t\t\"degrees\": 213\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 11,\n\t\t\"kph\": 18,\n\t\t\"dir\": \"SSW\",\n\t\t\"degrees\":
+        213\n\t\t},\n\t\t\"avehumidity\": 30,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1458774000\",\n\t\"pretty\":\"7:00
+        PM EDT on March 23, 2016\",\n\t\"day\":23,\n\t\"month\":3,\n\t\"year\":2016,\n\t\"yday\":82,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"March\",\n\t\"monthname_short\":\"Mar\",\n\t\"weekday_short\":\"Wed\",\n\t\"weekday\":\"Wednesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"EDT\",\n\t\"tz_long\":\"America/New_York\"\n},\n\t\t\"period\":2,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"69\",\n\t\t\"celsius\":\"21\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"48\",\n\t\t\"celsius\":\"9\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":0,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"WSW\",\n\t\t\"degrees\": 239\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 11,\n\t\t\"kph\": 18,\n\t\t\"dir\": \"WSW\",\n\t\t\"degrees\":
+        239\n\t\t},\n\t\t\"avehumidity\": 46,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1458860400\",\n\t\"pretty\":\"7:00
+        PM EDT on March 24, 2016\",\n\t\"day\":24,\n\t\"month\":3,\n\t\"year\":2016,\n\t\"yday\":83,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"March\",\n\t\"monthname_short\":\"Mar\",\n\t\"weekday_short\":\"Thu\",\n\t\"weekday\":\"Thursday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"EDT\",\n\t\"tz_long\":\"America/New_York\"\n},\n\t\t\"period\":3,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"66\",\n\t\t\"celsius\":\"19\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"56\",\n\t\t\"celsius\":\"13\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.30,\n\t\t\"mm\": 8\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.30,\n\t\t\"mm\":
+        8\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 20,\n\t\t\"kph\":
+        32,\n\t\t\"dir\": \"E\",\n\t\t\"degrees\": 97\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        14,\n\t\t\"kph\": 23,\n\t\t\"dir\": \"E\",\n\t\t\"degrees\": 97\n\t\t},\n\t\t\"avehumidity\":
+        58,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1458946800\",\n\t\"pretty\":\"7:00
+        PM EDT on March 25, 2016\",\n\t\"day\":25,\n\t\"month\":3,\n\t\"year\":2016,\n\t\"yday\":84,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"March\",\n\t\"monthname_short\":\"Mar\",\n\t\"weekday_short\":\"Fri\",\n\t\"weekday\":\"Friday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"EDT\",\n\t\"tz_long\":\"America/New_York\"\n},\n\t\t\"period\":4,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"64\",\n\t\t\"celsius\":\"18\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"41\",\n\t\t\"celsius\":\"5\"\n\t\t},\n\t\t\"conditions\":\"Rain\",\n\t\t\"icon\":\"rain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/rain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":90,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.08,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.08,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 20,\n\t\t\"kph\":
+        32,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 235\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 14,\n\t\t\"kph\": 23,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\":
+        235\n\t\t},\n\t\t\"avehumidity\": 63,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t]\n\t\t}\n\t}\n}\n"
+    http_version:
+  recorded_at: Tue, 22 Mar 2016 19:15:29 GMT
+recorded_with: VCR 3.0.1

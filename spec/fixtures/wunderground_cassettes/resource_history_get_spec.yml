@@ -1,0 +1,260 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/default_api_key/history/q/10001.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wunderground.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.165'
+      Last-Modified:
+      - Tue, 22 Mar 2016 19:15:30 GMT
+      Nncoection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 22 Mar 2016 19:15:30 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Tue, 22 Mar 2016 19:15:30 GMT
+      Content-Length:
+      - '15882'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1458674130:22192:365-y2; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
+        domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"history\": 1\n  }\n\t}\n\t\t,\n\t\"history\": {\n\t\t\"date\":
+        {\n\t\t\"pretty\": \"March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"00\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\": \"March
+        22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\":
+        \"22\",\n\t\t\"hour\": \"04\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\": \"UTC\"\n\t\t},\n\t\t\"observations\":
+        [\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"12:51 AM EDT on March 22, 2016\",\n\t\t\"year\":
+        \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"00\",\n\t\t\"min\":
+        \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"4:51 AM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"04\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"2.8\", \"tempi\":\"37.0\",\"dewptm\":\"-8.3\",
+        \"dewpti\":\"17.1\",\"hum\":\"44\",\"wspdm\":\"11.1\", \"wspdi\":\"6.9\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"300\",\"wdire\":\"WNW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1017.3\", \"pressurei\":\"30.04\",\"windchillm\":\"-0.2\",
+        \"windchilli\":\"31.6\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 220451Z AUTO 30006KT 10SM CLR 03/M08 A3007 RMK AO2 SLP173 T00281083 401000000\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"1:51 AM EDT on March 22, 2016\",\n\t\t\"year\":
+        \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"01\",\n\t\t\"min\":
+        \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"5:51 AM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"05\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"2.2\", \"tempi\":\"36.0\",\"dewptm\":\"-8.3\",
+        \"dewpti\":\"17.1\",\"hum\":\"46\",\"wspdm\":\"5.6\", \"wspdi\":\"3.5\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"0\",\"wdire\":\"Variable\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1017.7\", \"pressurei\":\"30.06\",\"windchillm\":\"0.7\",
+        \"windchilli\":\"33.3\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 220551Z AUTO VRB03KT 10SM CLR 02/M08 A3008 RMK AO2 SLP177 T00221083 10061
+        20022 51015\" },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"2:51 AM EDT on
+        March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\":
+        \"22\",\n\t\t\"hour\": \"02\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\":
+        {\n\t\t\"pretty\": \"6:51 AM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"06\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"2.2\", \"tempi\":\"36.0\",\"dewptm\":\"-8.3\",
+        \"dewpti\":\"17.1\",\"hum\":\"46\",\"wspdm\":\"11.1\", \"wspdi\":\"6.9\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"0\",\"wdire\":\"Variable\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1018.3\", \"pressurei\":\"30.07\",\"windchillm\":\"-0.9\",
+        \"windchilli\":\"30.3\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 220651Z AUTO VRB06KT 10SM CLR 02/M08 A3009 RMK AO2 SLP183 T00221083\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"3:51 AM EDT on March 22, 2016\",\n\t\t\"year\":
+        \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"03\",\n\t\t\"min\":
+        \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"7:51 AM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"07\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"2.2\", \"tempi\":\"36.0\",\"dewptm\":\"-8.3\",
+        \"dewpti\":\"17.1\",\"hum\":\"46\",\"wspdm\":\"14.8\", \"wspdi\":\"9.2\",\"wgustm\":\"27.8\",
+        \"wgusti\":\"17.3\",\"wdird\":\"300\",\"wdire\":\"WNW\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1018.5\", \"pressurei\":\"30.08\",\"windchillm\":\"-1.6\",
+        \"windchilli\":\"29.0\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 220751Z AUTO 30008G15KT 270V340 10SM CLR 02/M08 A3010 RMK AO2 SLP185
+        T00221083\" },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"4:51 AM EDT on March
+        22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\":
+        \"22\",\n\t\t\"hour\": \"04\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\":
+        {\n\t\t\"pretty\": \"8:51 AM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"08\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"2.2\", \"tempi\":\"36.0\",\"dewptm\":\"-8.9\",
+        \"dewpti\":\"16.0\",\"hum\":\"44\",\"wspdm\":\"11.1\", \"wspdi\":\"6.9\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"0\",\"wdire\":\"Variable\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1019.2\", \"pressurei\":\"30.10\",\"windchillm\":\"-0.9\",
+        \"windchilli\":\"30.3\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 220851Z AUTO VRB06KT 10SM CLR 02/M09 A3012 RMK AO2 SLP192 T00221089 53015\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"5:51 AM EDT on March 22, 2016\",\n\t\t\"year\":
+        \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"05\",\n\t\t\"min\":
+        \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"9:51 AM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"09\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"2.2\", \"tempi\":\"36.0\",\"dewptm\":\"-8.9\",
+        \"dewpti\":\"16.0\",\"hum\":\"44\",\"wspdm\":\"7.4\", \"wspdi\":\"4.6\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"0\",\"wdire\":\"Variable\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1019.7\", \"pressurei\":\"30.12\",\"windchillm\":\"0.0\",
+        \"windchilli\":\"32.1\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 220951Z AUTO VRB04KT 10SM CLR 02/M09 A3014 RMK AO2 SLP197 T00221089\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"6:51 AM EDT on March 22, 2016\",\n\t\t\"year\":
+        \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"06\",\n\t\t\"min\":
+        \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"10:51 AM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"10\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"1.7\", \"tempi\":\"35.1\",\"dewptm\":\"-8.9\",
+        \"dewpti\":\"16.0\",\"hum\":\"46\",\"wspdm\":\"0.0\", \"wspdi\":\"0.0\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"0\",\"wdire\":\"North\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1020.5\", \"pressurei\":\"30.14\",\"windchillm\":\"-999\",
+        \"windchilli\":\"-999\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 221051Z AUTO 00000KT 10SM CLR 02/M09 A3016 RMK AO2 SLP205 T00171089\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"7:51 AM EDT on March 22, 2016\",\n\t\t\"year\":
+        \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"07\",\n\t\t\"min\":
+        \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"11:51 AM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"11\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"1.7\", \"tempi\":\"35.1\",\"dewptm\":\"-8.3\",
+        \"dewpti\":\"17.1\",\"hum\":\"48\",\"wspdm\":\"9.3\", \"wspdi\":\"5.8\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"270\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1021.3\", \"pressurei\":\"30.16\",\"windchillm\":\"-1.1\",
+        \"windchilli\":\"30.1\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 221151Z AUTO 27005KT 10SM CLR 02/M08 A3018 RMK AO2 SLP213 T00171083 10028
+        20017 53021\" },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"8:51 AM EDT on
+        March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\":
+        \"22\",\n\t\t\"hour\": \"08\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\":
+        {\n\t\t\"pretty\": \"12:51 PM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"12\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"2.8\", \"tempi\":\"37.0\",\"dewptm\":\"-8.9\",
+        \"dewpti\":\"16.0\",\"hum\":\"42\",\"wspdm\":\"7.4\", \"wspdi\":\"4.6\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"0\",\"wdire\":\"Variable\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1022.0\", \"pressurei\":\"30.18\",\"windchillm\":\"0.7\",
+        \"windchilli\":\"33.3\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 221251Z AUTO VRB04KT 10SM CLR 03/M09 A3021 RMK AO2 SLP220 T00281089\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"9:51 AM EDT on March 22, 2016\",\n\t\t\"year\":
+        \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"09\",\n\t\t\"min\":
+        \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"1:51 PM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"13\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"5.0\", \"tempi\":\"41.0\",\"dewptm\":\"-8.3\",
+        \"dewpti\":\"17.1\",\"hum\":\"38\",\"wspdm\":\"13.0\", \"wspdi\":\"8.1\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"280\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1022.4\", \"pressurei\":\"30.19\",\"windchillm\":\"2.1\",
+        \"windchilli\":\"35.8\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 221351Z AUTO 28007KT 10SM CLR 05/M08 A3022 RMK AO2 SLP224 T00501083\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"10:51 AM EDT on March 22, 2016\",\n\t\t\"year\":
+        \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"10\",\n\t\t\"min\":
+        \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"2:51 PM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"14\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"6.1\", \"tempi\":\"43.0\",\"dewptm\":\"-8.9\",
+        \"dewpti\":\"16.0\",\"hum\":\"34\",\"wspdm\":\"11.1\", \"wspdi\":\"6.9\",\"wgustm\":\"31.5\",
+        \"wgusti\":\"19.6\",\"wdird\":\"280\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1022.5\", \"pressurei\":\"30.20\",\"windchillm\":\"3.8\",
+        \"windchilli\":\"38.8\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 221451Z AUTO 28006G17KT 10SM CLR 06/M09 A3022 RMK AO2 SLP225 T00611089
+        51012\" },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"11:51 AM EDT on March
+        22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\":
+        \"22\",\n\t\t\"hour\": \"11\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\":
+        {\n\t\t\"pretty\": \"3:51 PM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"15\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"7.2\", \"tempi\":\"45.0\",\"dewptm\":\"-9.4\",
+        \"dewpti\":\"15.1\",\"hum\":\"30\",\"wspdm\":\"11.1\", \"wspdi\":\"6.9\",\"wgustm\":\"33.3\",
+        \"wgusti\":\"20.7\",\"wdird\":\"0\",\"wdire\":\"Variable\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1021.6\", \"pressurei\":\"30.17\",\"windchillm\":\"5.1\",
+        \"windchilli\":\"41.2\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 221551Z AUTO VRB06G18KT 10SM CLR 07/M09 A3019 RMK AO2 SLP216 T00721094\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"12:51 PM EDT on March 22, 2016\",\n\t\t\"year\":
+        \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"12\",\n\t\t\"min\":
+        \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"4:51 PM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"16\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"8.9\", \"tempi\":\"48.0\",\"dewptm\":\"-9.4\",
+        \"dewpti\":\"15.1\",\"hum\":\"27\",\"wspdm\":\"14.8\", \"wspdi\":\"9.2\",\"wgustm\":\"33.3\",
+        \"wgusti\":\"20.7\",\"wdird\":\"270\",\"wdire\":\"West\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1020.6\", \"pressurei\":\"30.14\",\"windchillm\":\"-999\",
+        \"windchilli\":\"-999\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 221651Z AUTO 27008G18KT 10SM CLR 09/M09 A3016 RMK AO2 SLP206 T00891094\"
+        },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"1:51 PM EDT on March 22, 2016\",\n\t\t\"year\":
+        \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"13\",\n\t\t\"min\":
+        \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\": {\n\t\t\"pretty\":
+        \"5:51 PM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"17\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"10.6\", \"tempi\":\"51.1\",\"dewptm\":\"-8.9\",
+        \"dewpti\":\"16.0\",\"hum\":\"25\",\"wspdm\":\"11.1\", \"wspdi\":\"6.9\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"0\",\"wdire\":\"Variable\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1019.4\", \"pressurei\":\"30.11\",\"windchillm\":\"-999\",
+        \"windchilli\":\"-999\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 221751Z AUTO VRB06KT 10SM CLR 11/M09 A3013 RMK AO2 SLP194 T01061089 10106
+        20022 58031\" },\n\t\t{\n\t\t\"date\": {\n\t\t\"pretty\": \"2:51 PM EDT on
+        March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\":
+        \"22\",\n\t\t\"hour\": \"14\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"utcdate\":
+        {\n\t\t\"pretty\": \"6:51 PM GMT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\":
+        \"03\",\n\t\t\"mday\": \"22\",\n\t\t\"hour\": \"18\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\":
+        \"UTC\"\n\t\t},\n\t\t\"tempm\":\"12.2\", \"tempi\":\"54.0\",\"dewptm\":\"-8.9\",
+        \"dewpti\":\"16.0\",\"hum\":\"22\",\"wspdm\":\"11.1\", \"wspdi\":\"6.9\",\"wgustm\":\"-9999.0\",
+        \"wgusti\":\"-9999.0\",\"wdird\":\"0\",\"wdire\":\"Variable\",\"vism\":\"16.1\",
+        \"visi\":\"10.0\",\"pressurem\":\"1018.1\", \"pressurei\":\"30.07\",\"windchillm\":\"-999\",
+        \"windchilli\":\"-999\",\"heatindexm\":\"-9999\", \"heatindexi\":\"-9999\",\"precipm\":\"-9999.00\",
+        \"precipi\":\"-9999.00\",\"conds\":\"Clear\",\"icon\":\"clear\",\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"metar\":\"METAR
+        KNYC 221851Z AUTO VRB06KT 10SM CLR 12/M09 A3009 RMK AO2 SLP181 T01221089\"
+        }\n\t\t],\n\t\t\"dailysummary\": [\n\t\t{ \"date\": {\n\t\t\"pretty\": \"12:51
+        AM EDT on March 22, 2016\",\n\t\t\"year\": \"2016\",\n\t\t\"mon\": \"03\",\n\t\t\"mday\":
+        \"22\",\n\t\t\"hour\": \"00\",\n\t\t\"min\": \"51\",\n\t\t\"tzname\": \"America/New_York\"\n\t\t},\n\t\t\"fog\":\"0\",\"rain\":\"0\",\"snow\":\"0\",\"snowfallm\":\"\",
+        \"snowfalli\":\"\",\"monthtodatesnowfallm\":\"\", \"monthtodatesnowfalli\":\"\",\"since1julsnowfallm\":\"\",
+        \"since1julsnowfalli\":\"\",\"snowdepthm\":\"\", \"snowdepthi\":\"\",\"hail\":\"0\",\"thunder\":\"0\",\"tornado\":\"0\",\"meantempm\":\"6\",
+        \"meantempi\":\"43\",\"meandewptm\":\"-9\", \"meandewpti\":\"16\",\"meanpressurem\":\"1019.94\",
+        \"meanpressurei\":\"30.12\",\"meanwindspdm\":\"8\", \"meanwindspdi\":\"5\",\"meanwdire\":\"WNW\",\"meanwdird\":\"283\",\"meanvism\":\"16.1\",
+        \"meanvisi\":\"10.0\",\"humidity\":\"39\",\"maxtempm\":\"12\", \"maxtempi\":\"54\",\"mintempm\":\"1\",
+        \"mintempi\":\"35\",\"maxhumidity\":\"48\",\"minhumidity\":\"22\",\"maxdewptm\":\"-8\",
+        \"maxdewpti\":\"17\",\"mindewptm\":\"-9\", \"mindewpti\":\"15\",\"maxpressurem\":\"1022\",
+        \"maxpressurei\":\"30.20\",\"minpressurem\":\"1017\", \"minpressurei\":\"30.04\",\"maxwspdm\":\"15\",
+        \"maxwspdi\":\"9\",\"minwspdm\":\"0\", \"minwspdi\":\"0\",\"maxvism\":\"16.1\",
+        \"maxvisi\":\"10.0\",\"minvism\":\"16.1\", \"minvisi\":\"10.0\",\"gdegreedays\":\"0\",\"heatingdegreedays\":\"22\",\"coolingdegreedays\":\"0\",\"precipm\":\"0.0\",
+        \"precipi\":\"0.00\",\"precipsource\":\"3Or6HourObs\",\"heatingdegreedaysnormal\":\"\",\"monthtodateheatingdegreedays\":\"\",\"monthtodateheatingdegreedaysnormal\":\"\",\"since1sepheatingdegreedays\":\"\",\"since1sepheatingdegreedaysnormal\":\"\",\"since1julheatingdegreedays\":\"\",\"since1julheatingdegreedaysnormal\":\"\",\"coolingdegreedaysnormal\":\"\",\"monthtodatecoolingdegreedays\":\"\",\"monthtodatecoolingdegreedaysnormal\":\"\",\"since1sepcoolingdegreedays\":\"\",\"since1sepcoolingdegreedaysnormal\":\"\",\"since1jancoolingdegreedays\":\"\",\"since1jancoolingdegreedaysnormal\":\"\"
+        }\n\t\t]\n\t}\n}\n"
+    http_version:
+  recorded_at: Tue, 22 Mar 2016 19:15:30 GMT
+recorded_with: VCR 3.0.1

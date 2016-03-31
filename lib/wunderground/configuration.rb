@@ -1,18 +1,17 @@
 module Wunderground
   module Configuration
-    VALID_CONNECTION_KEYS = [:endpoint, :user_agent, :method].freeze
+    VALID_CONNECTION_KEYS = [:domain, :user_agent, :method].freeze
     VALID_OPTIONS_KEYS    = [:api_key, :format].freeze
     VALID_CONFIG_KEYS     = VALID_CONNECTION_KEYS + VALID_OPTIONS_KEYS
 
-    DEFAULT_ENDPOINT    = "http://api.wunderground.com/api/"
+    DEFAULT_DOMAIN      = "http://api.wunderground.com/".freeze
     DEFAULT_USER_AGENT  = "Wunderground Ruby Gem #{Wunderground::VERSION}".freeze
-    DEFAULT_API_KEY     = "abc123"
+    DEFAULT_API_KEY     = "default_api_key"
 
     DEFAULT_METHOD       = :get
     DEFAULT_FORMAT       = :json
 
-    # Build accessor methods for every config options so we can do this, for example:
-    #   Awesome.format = :xml
+    # Build accessor methods for every config option
     attr_accessor *VALID_CONFIG_KEYS
 
     # Make sure we have the default values set when we get 'extended'
@@ -25,7 +24,7 @@ module Wunderground
     end
 
     def reset
-      self.endpoint   = DEFAULT_ENDPOINT
+      self.domain     = DEFAULT_DOMAIN
       self.method     = DEFAULT_METHOD
       self.user_agent = DEFAULT_USER_AGENT
 
@@ -34,4 +33,4 @@ module Wunderground
     end
 
   end # Configuration
-end
+end # Wunderground
