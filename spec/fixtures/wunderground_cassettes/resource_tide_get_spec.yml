@@ -1,0 +1,292 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/default_api_key/tide/q/10001.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wunderground.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.053'
+      Last-Modified:
+      - Tue, 22 Mar 2016 19:15:32 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 22 Mar 2016 19:15:32 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Tue, 22 Mar 2016 19:15:32 GMT
+      Content-Length:
+      - '15264'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1458674132:40363:365-dell-c17; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"tide\": 1\n  }\n\t}\n\t\t,\n\t\"tide\": {\n\t\t\"tideInfo\":
+        [\n\t\t{\n\t\t\"tideSite\":\"East 41st Street, New York City, East River,
+        New York\",\n\t\t\"lat\":\"40.7467\",\n\t\t\"lon\":\"-73.9683\",\n\t\t\"units\":\"feet\",\n\t\t\"type\":\"tide\",\n\t\t\"tzname\":\"America/New_York\"\n\t\t}\n\t\t],\n\t\t\"tideSummary\":
+        [\n\t\t{\n\t\t\"date\": {\n  \"pretty\": \"3:37 PM EDT on March 22, 2016\",\n
+        \ \"year\": \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"22\",\n  \"hour\":
+        \"15\",\n  \"min\": \"37\",\n  \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458675431\"\n
+        \ },\n  \"utcdate\": {\n  \"pretty\": \"7:37 PM GMT on March 22, 2016\",\n
+        \ \"year\": \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"22\",\n  \"hour\":
+        \"19\",\n  \"min\": \"37\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458675431\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"-0.19 ft\",\n\t\t\"type\":\"Low Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"6:35 PM EDT on March 22, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"22\",\n  \"hour\": \"18\",\n  \"min\": \"35\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458686105\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"10:35 PM GMT on March 22, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"22\",\n  \"hour\": \"22\",\n
+        \ \"min\": \"35\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458686105\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Moonrise\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"7:10 PM EDT on March 22, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"22\",\n  \"hour\": \"19\",\n  \"min\": \"10\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458688240\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"11:10 PM GMT on March 22, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"22\",\n  \"hour\": \"23\",\n
+        \ \"min\": \"10\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458688240\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Sunset\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"9:58 PM EDT on March 22, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"22\",\n  \"hour\": \"21\",\n  \"min\": \"58\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458698307\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"1:58 AM GMT on March 23, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"01\",\n
+        \ \"min\": \"58\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458698307\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"4.77 ft\",\n\t\t\"type\":\"High Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"3:53 AM EDT on March 23, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"03\",\n  \"min\": \"53\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458719614\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"7:53 AM GMT on March 23, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"07\",\n
+        \ \"min\": \"53\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458719614\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"-0.14 ft\",\n\t\t\"type\":\"Low Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"6:53 AM EDT on March 23, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"06\",\n  \"min\": \"53\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458730410\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"10:53 AM GMT on March 23, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"10\",\n
+        \ \"min\": \"53\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458730410\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Sunrise\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"7:01 AM EDT on March 23, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"07\",\n  \"min\": \"01\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458730884\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"11:01 AM GMT on March 23, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"11\",\n
+        \ \"min\": \"01\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458730884\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Moonset\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"8:01 AM EDT on March 23, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"08\",\n  \"min\": \"01\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458734498\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"12:01 PM GMT on March 23, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"12\",\n
+        \ \"min\": \"01\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458734498\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Full Moon\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"10:13 AM EDT on March 23, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"10\",\n  \"min\": \"13\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458742420\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"2:13 PM GMT on March 23, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"14\",\n
+        \ \"min\": \"13\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458742420\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"4.61 ft\",\n\t\t\"type\":\"High Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"4:15 PM EDT on March 23, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"16\",\n  \"min\": \"15\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458764145\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"8:15 PM GMT on March 23, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"20\",\n
+        \ \"min\": \"15\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458764145\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"-0.16 ft\",\n\t\t\"type\":\"Low Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"7:11 PM EDT on March 23, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"19\",\n  \"min\": \"11\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458774709\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"11:11 PM GMT on March 23, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"23\",\n
+        \ \"min\": \"11\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458774709\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Sunset\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"7:31 PM EDT on March 23, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"19\",\n  \"min\": \"31\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458775903\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"11:31 PM GMT on March 23, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"23\",\n
+        \ \"min\": \"31\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458775903\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Moonrise\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"10:35 PM EDT on March 23, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"23\",\n  \"hour\": \"22\",\n  \"min\": \"35\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458786913\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"2:35 AM GMT on March 24, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"02\",\n
+        \ \"min\": \"35\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458786913\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"4.78 ft\",\n\t\t\"type\":\"High Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"4:34 AM EDT on March 24, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"04\",\n  \"min\": \"34\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458808450\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"8:34 AM GMT on March 24, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"08\",\n
+        \ \"min\": \"34\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458808450\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"-0.14 ft\",\n\t\t\"type\":\"Low Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"6:51 AM EDT on March 24, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"06\",\n  \"min\": \"51\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458816710\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"10:51 AM GMT on March 24, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"10\",\n
+        \ \"min\": \"51\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458816710\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Sunrise\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"7:30 AM EDT on March 24, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"07\",\n  \"min\": \"30\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458819027\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"11:30 AM GMT on March 24, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"11\",\n
+        \ \"min\": \"30\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458819027\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Moonset\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"10:50 AM EDT on March 24, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"10\",\n  \"min\": \"50\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458831030\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"2:50 PM GMT on March 24, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"14\",\n
+        \ \"min\": \"50\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458831030\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"4.52 ft\",\n\t\t\"type\":\"High Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"4:52 PM EDT on March 24, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"16\",\n  \"min\": \"52\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458852722\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"8:52 PM GMT on March 24, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"20\",\n
+        \ \"min\": \"52\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458852722\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"-0.05 ft\",\n\t\t\"type\":\"Low Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"7:12 PM EDT on March 24, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"19\",\n  \"min\": \"12\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458861173\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"11:12 PM GMT on March 24, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"23\",\n
+        \ \"min\": \"12\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458861173\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Sunset\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"8:27 PM EDT on March 24, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"20\",\n  \"min\": \"27\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458865668\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"12:27 AM GMT on March 25, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"00\",\n
+        \ \"min\": \"27\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458865668\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Moonrise\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"11:11 PM EDT on March 24, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"24\",\n  \"hour\": \"23\",\n  \"min\": \"11\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458875465\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"3:11 AM GMT on March 25, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"03\",\n
+        \ \"min\": \"11\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458875465\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"4.72 ft\",\n\t\t\"type\":\"High Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"5:12 AM EDT on March 25, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"05\",\n  \"min\": \"12\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458897160\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"9:12 AM GMT on March 25, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"09\",\n
+        \ \"min\": \"12\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458897160\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"-0.07 ft\",\n\t\t\"type\":\"Low Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"6:50 AM EDT on March 25, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"06\",\n  \"min\": \"50\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458903011\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"10:50 AM GMT on March 25, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"10\",\n
+        \ \"min\": \"50\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458903011\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Sunrise\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"8:00 AM EDT on March 25, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"08\",\n  \"min\": \"00\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458907214\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"12:00 PM GMT on March 25, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"12\",\n
+        \ \"min\": \"00\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458907214\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Moonset\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"11:27 AM EDT on March 25, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"11\",\n  \"min\": \"27\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458919636\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"3:27 PM GMT on March 25, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"15\",\n
+        \ \"min\": \"27\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458919636\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"4.36 ft\",\n\t\t\"type\":\"High Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"5:26 PM EDT on March 25, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"17\",\n  \"min\": \"26\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458941168\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"9:26 PM GMT on March 25, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"21\",\n
+        \ \"min\": \"26\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458941168\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"0.12 ft\",\n\t\t\"type\":\"Low Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"7:13 PM EDT on March 25, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"19\",\n  \"min\": \"13\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458947637\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"11:13 PM GMT on March 25, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"23\",\n
+        \ \"min\": \"13\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458947637\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Sunset\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"9:23 PM EDT on March 25, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"21\",\n  \"min\": \"23\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458955409\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"1:23 AM GMT on March 26, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"26\",\n  \"hour\": \"01\",\n
+        \ \"min\": \"23\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458955409\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Moonrise\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"11:45 PM EDT on March 25, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"25\",\n  \"hour\": \"23\",\n  \"min\": \"45\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458963934\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"3:45 AM GMT on March 26, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"26\",\n  \"hour\": \"03\",\n
+        \ \"min\": \"45\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458963934\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"4.62 ft\",\n\t\t\"type\":\"High Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"5:49 AM EDT on March 26, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"26\",\n  \"hour\": \"05\",\n  \"min\": \"49\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458985760\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"9:49 AM GMT on March 26, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"26\",\n  \"hour\": \"09\",\n
+        \ \"min\": \"49\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458985760\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"0.08 ft\",\n\t\t\"type\":\"Low Tide\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"6:48 AM EDT on March 26, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"26\",\n  \"hour\": \"06\",\n  \"min\": \"48\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458989311\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"10:48 AM GMT on March 26, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"26\",\n  \"hour\": \"10\",\n
+        \ \"min\": \"48\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458989311\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Sunrise\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"8:31 AM EDT on March 26, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"26\",\n  \"hour\": \"08\",\n  \"min\": \"31\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1458995496\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"12:31 PM GMT on March 26, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"26\",\n  \"hour\": \"12\",\n
+        \ \"min\": \"31\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1458995496\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"\",\n\t\t\"type\":\"Moonset\"\n\t\t}\n\t\t},\n\t\t{\n\t\t\"date\":
+        {\n  \"pretty\": \"12:04 PM EDT on March 26, 2016\",\n  \"year\": \"2016\",\n
+        \ \"mon\": \"03\",\n  \"mday\": \"26\",\n  \"hour\": \"12\",\n  \"min\": \"04\",\n
+        \ \"tzname\": \"America/New_York\",\n\t\t\"epoch\":\"1459008246\"\n  },\n
+        \ \"utcdate\": {\n  \"pretty\": \"4:04 PM GMT on March 26, 2016\",\n  \"year\":
+        \"2016\",\n  \"mon\": \"03\",\n  \"mday\": \"26\",\n  \"hour\": \"16\",\n
+        \ \"min\": \"04\",\n  \"tzname\": \"UTC\",\n\t\t\"epoch\":\"1459008246\"\n
+        \ },\n\t\t\"data\": {\n\t\t\"height\":\"4.17 ft\",\n\t\t\"type\":\"High Tide\"\n\t\t}\n\t\t}\n\t\t],\n\t\t\"tideSummaryStats\":
+        [\n\t\t{\n  \"maxheight\":4.780000,\n  \"minheight\":-0.190000\n\t\t}\n  ]\n\t}\n}\n"
+    http_version:
+  recorded_at: Tue, 22 Mar 2016 19:15:32 GMT
+recorded_with: VCR 3.0.1

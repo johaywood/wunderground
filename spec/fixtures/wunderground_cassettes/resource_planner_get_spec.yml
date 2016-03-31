@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/default_api_key/planner/q/10001.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wunderground.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.024'
+      Last-Modified:
+      - Tue, 22 Mar 2016 19:15:31 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 22 Mar 2016 19:15:31 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Tue, 22 Mar 2016 19:15:31 GMT
+      Content-Length:
+      - '1586'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1458674131:15793:365-z3; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
+        domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"planner\": 1\n  }\n\t}\n\t\t,\n\t\"trip\": {\n\t\t\"title\":
+        \"Historical Summary for - \",\n\t\t\"airport_code\": \"\",\n\t\t\"error\":
+        \"\",\n\t\t\"period_of_record\": {\n\t\t\"date_start\": {\n\t\t\"date\":{\n\t\"epoch\":\"\",\n\t\"pretty\":\"\",\n\t\"day\":null,\n\t\"month\":null,\n\t\"year\":null,\n\t\"yday\":null,\n\t\"hour\":null,\n\t\"min\":null,\n\t\"sec\":null,\n\t\"isdst\":\"\",\n\t\"monthname\":\"\",\n\t\"monthname_short\":\"\",\n\t\"weekday_short\":\"\",\n\t\"weekday\":\"\",\n\t\"ampm\":\"\",\n\t\"tz_short\":\"\",\n\t\"tz_long\":\"\"\n}\n\t\t},\n\t\t\"date_end\":
+        {\n\t\t\"date\":{\n\t\"epoch\":\"\",\n\t\"pretty\":\"\",\n\t\"day\":null,\n\t\"month\":null,\n\t\"year\":null,\n\t\"yday\":null,\n\t\"hour\":null,\n\t\"min\":null,\n\t\"sec\":null,\n\t\"isdst\":\"\",\n\t\"monthname\":\"\",\n\t\"monthname_short\":\"\",\n\t\"weekday_short\":\"\",\n\t\"weekday\":\"\",\n\t\"ampm\":\"\",\n\t\"tz_short\":\"\",\n\t\"tz_long\":\"\"\n}\n\t\t}\n\t\t},\n\t\t\"temp_high\":
+        {\n\t\t\"min\": {\n\t\t\"F\": \"\",\n\t\t\"C\": \"\"\n\t\t},\n\t\t\"avg\":
+        {\n\t\t\"F\": \"\",\n\t\t\"C\": \"\"\n\t\t},\n\t\t\"max\": {\n\t\t\"F\": \"\",\n\t\t\"C\":
+        \"\"\n\t\t}\n\t\t},\n\t\t\"temp_low\": {\n\t\t\"min\": {\n\t\t\"F\": \"\",\n\t\t\"C\":
+        \"\"\n\t\t},\n\t\t\"avg\": {\n\t\t\"F\": \"\",\n\t\t\"C\": \"\"\n\t\t},\n\t\t\"max\":
+        {\n\t\t\"F\": \"\",\n\t\t\"C\": \"\"\n\t\t}\n\t\t},\n\t\t\"precip\": {\n\t\t\"min\":
+        {\n\t\t\"in\": \"\",\n\t\t\"cm\": \"\"\n\t\t},\n\t\t\"avg\": {\n\t\t\"in\":
+        \"\",\n\t\t\"cm\": \"\"\n\t\t},\n\t\t\"max\": {\n\t\t\"in\": \"\",\n\t\t\"cm\":
+        \"\"\n\t\t}\n\t\t},\n\t\t\"dewpoint_high\": {\n\t\t\"min\": {\n\t\t\"F\":
+        \"\",\n\t\t\"C\": \"\"\n\t\t},\n\t\t\"avg\": {\n\t\t\"F\": \"\",\n\t\t\"C\":
+        \"\"\n\t\t},\n\t\t\"max\": {\n\t\t\"F\": \"\",\n\t\t\"C\": \"\"\n\t\t}\n\t\t},\n\t\t\"dewpoint_low\":
+        {\n\t\t\"min\": {\n\t\t\"F\": \"\",\n\t\t\"C\": \"\"\n\t\t},\n\t\t\"avg\":
+        {\n\t\t\"F\": \"\",\n\t\t\"C\": \"\"\n\t\t},\n\t\t\"max\": {\n\t\t\"F\": \"\",\n\t\t\"C\":
+        \"\"\n\t\t}\n\t\t},\n\t\t\"cloud_cover\": {\n\t\t\"cond\": \"sunny\"\n\t\t},\n\t\t\"chance_of\":
+        {\n\t\t}\n\t}\n}\n"
+    http_version:
+  recorded_at: Tue, 22 Mar 2016 19:15:31 GMT
+recorded_with: VCR 3.0.1

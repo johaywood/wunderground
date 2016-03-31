@@ -1,6 +1,14 @@
 describe 'configuration' do
-
   context 'with default options' do
+    before(:each) do
+      Wunderground.reset
+    end
+    describe '.domain' do
+      it 'should return default domain' do
+        expect(Wunderground.domain).to eq Wunderground::Configuration::DEFAULT_DOMAIN
+      end
+    end
+
     describe '.api_key' do
       it 'should return default key' do
         expect(Wunderground.api_key).to eq Wunderground::Configuration::DEFAULT_API_KEY
@@ -27,13 +35,19 @@ describe 'configuration' do
   end
 
   context 'with user configured options' do
-
     before(:each) do
       Wunderground.configure do |c|
+        c.domain = 'http://example.domain.com'
         c.api_key = 'user_configured_key'
         c.format = :user_configured_format
         c.user_agent = 'user_configured_user_agent'
         c.method = :user_configured_method
+      end
+    end
+
+    describe '.domain' do
+      it 'should return configured domain' do
+        expect(Wunderground.domain).to eq 'http://example.domain.com'
       end
     end
 
