@@ -7,12 +7,16 @@ Weather Underground API Wrapper. Curretly includes support for all data features
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'wunderground', git: 'https://github.com/johaywood/wunderground.git'
+gem 'wunderground_api'
 ```
 
 And then execute:
 
     $ bundle
+    
+Or install it yourself as:
+
+    $ gem install wunderground_api
 
 ## Usage
 
