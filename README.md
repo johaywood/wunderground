@@ -13,7 +13,7 @@ gem 'wunderground_api'
 And then execute:
 
     $ bundle
-    
+
 Or install it yourself as:
 
     $ gem install wunderground_api
@@ -42,7 +42,16 @@ Wunderground::Resources.hourly10day(city: 'London', state: 'England')
 etc...
 ```
 
-This will return a hash of the response body for the location provided. The schemas for the response objects can be found in the Wunderground documentation.
+This will return a hash of the response body for the location provided. The schemas for the response objects can be found in the [Wunderground API documentation](https://www.wunderground.com/weather/api/d/docs).
+
+Calls can be chained by joining resources with `_and_`. This will allow you to make fewer HTTP requests when multiple endpoints are needed.
+
+```ruby
+Wunderground::Resources.almanac_and_forecast(zip: '10001')
+Wunderground::Resources.geolookup_and_conditions(city: 'New York', state: 'NY')
+Wunderground::Resources.alerts_and_conditions_and_hourly10day(city: 'London', state: 'England')
+etc...
+```
 
 ### Locations
 

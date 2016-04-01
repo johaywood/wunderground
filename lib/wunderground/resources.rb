@@ -9,9 +9,10 @@ module Wunderground
     ]
 
     def self.method_missing(sym, options = {})
+      queries = sym.to_s.split("_and_").map(&:to_sym)
       location = Location.new(options).location
-      raise NoMethodError unless RESOURCES.include?(sym)
-      JSON.parse Client.get("api/#{Wunderground.api_key}/#{sym}/q/#{location}.json").body
+      raise NoMethodError unless (queries - RESOURCES).empty?
+      JSON.parse Client.get("api/#{Wunderground.api_key}/#{queries.join("/")}/q/#{location}.json").body
     end
   end
 end
