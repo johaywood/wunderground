@@ -1,0 +1,180 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/default_api_key/geolookup/forecast/q/10001.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wunderground.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.083'
+      Last-Modified:
+      - Fri, 01 Apr 2016 11:53:18 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Fri, 01 Apr 2016 11:53:18 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Fri, 01 Apr 2016 11:53:18 GMT
+      Content-Length:
+      - '13856'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1459511598:26407:365-dell-c15; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"geolookup\": 1\n  ,\n  \"forecast\": 1\n  }\n\t}\n\t\t,\t\"location\":
+        {\n\t\t\"type\":\"CITY\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"country_name\":\"USA\",\n\t\t\"state\":\"NY\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"tz_short\":\"EDT\",\n\t\t\"tz_long\":\"America/New_York\",\n\t\t\"lat\":\"40.75013351\",\n\t\t\"lon\":\"-73.99700928\",\n\t\t\"zip\":\"10001\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"l\":\"/q/zmw:10001.1.99999\",\n\t\t\"requesturl\":\"US/NY/New_York.html\",\n\t\t\"wuiurl\":\"http://www.wunderground.com/US/NY/New_York.html\",\n\t\t\"nearby_weather_stations\":
+        {\n\t\t\"airport\": {\n\t\t\"station\": [\n\t\t{ \"city\":\"Central Park\",
+        \"state\":\"NY\", \"country\":\"US\", \"icao\":\"KNYC\", \"lat\":\"40.77899933\",
+        \"lon\":\"-73.96924591\" }\n\t\t,{ \"city\":\"New York Downtown Manhattan/w\",
+        \"state\":\"NY\", \"country\":\"US\", \"icao\":\"KJRB\", \"lat\":\"40.70121384\",
+        \"lon\":\"-74.00902557\" }\n\t\t,{ \"city\":\"New York\", \"state\":\"NY\",
+        \"country\":\"US\", \"icao\":\"KLGA\", \"lat\":\"40.77944565\", \"lon\":\"-73.88027191\"
+        }\n\t\t,{ \"city\":\"Teterboro\", \"state\":\"NJ\", \"country\":\"US\", \"icao\":\"KTEB\",
+        \"lat\":\"40.85899353\", \"lon\":\"-74.05616760\" }\n\t\t]\n\t\t}\n\t\t,\n\t\t\"pws\":
+        {\n\t\t\"station\": [\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO258\",\n\t\t\"lat\":40.746979,\n\t\t\"lon\":-73.996620,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"West
+        Chelsea\",\n\t\t\"city\":\"New York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO206\",\n\t\t\"lat\":40.748192,\n\t\t\"lon\":-74.001923,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Chelsea,
+        West 28th St.\",\n\t\t\"city\":\"New York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO395\",\n\t\t\"lat\":40.746910,\n\t\t\"lon\":-73.992836,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO354\",\n\t\t\"lat\":40.752243,\n\t\t\"lon\":-74.004166,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO238\",\n\t\t\"lat\":40.747143,\n\t\t\"lon\":-73.990021,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO449\",\n\t\t\"lat\":40.751743,\n\t\t\"lon\":-74.005234,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO522\",\n\t\t\"lat\":40.742886,\n\t\t\"lon\":-73.994766,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO141\",\n\t\t\"lat\":40.742153,\n\t\t\"lon\":-73.999138,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO122\",\n\t\t\"lat\":40.742073,\n\t\t\"lon\":-73.998711,\n\t\t\"distance_km\":0,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO406\",\n\t\t\"lat\":40.752728,\n\t\t\"lon\":-73.985275,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Hell\\u0027s
+        Kitchen\",\n\t\t\"city\":\"New York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO254\",\n\t\t\"lat\":40.759022,\n\t\t\"lon\":-73.992470,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO429\",\n\t\t\"lat\":40.750359,\n\t\t\"lon\":-73.983452,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO218\",\n\t\t\"lat\":40.743759,\n\t\t\"lon\":-73.986359,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Hell\\u0027s
+        Kitchen\",\n\t\t\"city\":\"New York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO533\",\n\t\t\"lat\":40.760693,\n\t\t\"lon\":-73.998833,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO542\",\n\t\t\"lat\":40.739239,\n\t\t\"lon\":-73.990898,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Lower
+        Manhattan\",\n\t\t\"city\":\"New York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO291\",\n\t\t\"lat\":40.737835,\n\t\t\"lon\":-73.997704,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Hell\\u0027s
+        Kitchen\",\n\t\t\"city\":\"New York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO200\",\n\t\t\"lat\":40.761570,\n\t\t\"lon\":-73.989952,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Lower
+        Manhattan\",\n\t\t\"city\":\"Hoboken\",\n\t\t\"state\":\"NJ\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNJHOBOK24\",\n\t\t\"lat\":40.740082,\n\t\t\"lon\":-74.007378,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO178\",\n\t\t\"lat\":40.747269,\n\t\t\"lon\":-73.980064,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown
+        West\",\n\t\t\"city\":\"New York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO343\",\n\t\t\"lat\":40.762779,\n\t\t\"lon\":-73.991776,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Lower
+        Manhattan\",\n\t\t\"city\":\"Hoboken\",\n\t\t\"state\":\"NJ\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNJHOBOK12\",\n\t\t\"lat\":40.738083,\n\t\t\"lon\":-74.004951,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown
+        East\",\n\t\t\"city\":\"New York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO91\",\n\t\t\"lat\":40.752632,\n\t\t\"lon\":-73.979225,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Midtown\",\n\t\t\"city\":\"New
+        York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO193\",\n\t\t\"lat\":40.751450,\n\t\t\"lon\":-73.978241,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Theater
+        District\",\n\t\t\"city\":\"New York\",\n\t\t\"state\":\"NY\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNYNEWYO168\",\n\t\t\"lat\":40.761948,\n\t\t\"lon\":-73.986061,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t}\n\t\t]\n\t\t}\n\t\t}\n\t}\n\t\t,\n\t\"forecast\":{\n\t\t\"txt_forecast\":
+        {\n\t\t\"date\":\"6:10 AM EDT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/tstorms.gif\",\n\t\t\"title\":\"Friday\",\n\t\t\"fcttext\":\"Isolated
+        thunderstorms this morning, then mainly cloudy during the afternoon with thunderstorms
+        likely. High 73F. Winds SSW at 15 to 25 mph. Chance of rain 80%. Winds could
+        occasionally gust over 40 mph.\",\n\t\t\"fcttext_metric\":\"Scattered thunderstorms
+        during the morning becoming more widespread this afternoon. High 23C. Winds
+        SSW at 25 to 40 km/h. Chance of rain 80%. Winds could occasionally gust over
+        65 km/h.\",\n\t\t\"pop\":\"80\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":1,\n\t\t\"icon\":\"nt_cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_cloudy.gif\",\n\t\t\"title\":\"Friday
+        Night\",\n\t\t\"fcttext\":\"Overcast. Slight chance of a rain shower. Low
+        53F. Winds W at 10 to 20 mph, becoming NE and decreasing to less than 5 mph.\",\n\t\t\"fcttext_metric\":\"Overcast.
+        Slight chance of a rain shower. Low 12C. Winds W at 15 to 30 km/h, becoming
+        NE and decreasing to 5 to 10 km/h.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":2,\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"title\":\"Saturday\",\n\t\t\"fcttext\":\"Rain
+        showers early with some sunshine later in the day. High 59F. Winds SSW at
+        10 to 20 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Considerable
+        cloudiness with occasional rain showers. High near 15C. Winds SSW at 15 to
+        30 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":3,\n\t\t\"icon\":\"nt_chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancerain.gif\",\n\t\t\"title\":\"Saturday
+        Night\",\n\t\t\"fcttext\":\"Clear skies early followed by increasing clouds
+        and a few showers later at night. Snow may mix in. Low 38F. Winds WNW at 15
+        to 25 mph. Chance of rain 30%.\",\n\t\t\"fcttext_metric\":\"Clear skies early
+        giving way to clouds and a few showers after midnight. Snow may mix in. Low
+        4C. Winds WNW at 25 to 40 km/h. Chance of rain 30%.\",\n\t\t\"pop\":\"30\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":4,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Sunday\",\n\t\t\"fcttext\":\"Partly
+        cloudy and windy. High 43F. Winds NW at 25 to 35 mph. Winds could occasionally
+        gust over 40 mph.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies with gusty
+        winds. High 6C. Winds NW at 40 to 55 km/h. Winds could occasionally gust over
+        65 km/h.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":5,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Sunday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy. Low 33F. NNW winds shifting to
+        ENE at 10 to 20 mph.\",\n\t\t\"fcttext_metric\":\"Partly cloudy. Low 1C. NNW
+        winds shifting to ENE at 15 to 30 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":6,\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Cloudy
+        with showers. High 56F. SE winds shifting to NW at 10 to 15 mph. Chance of
+        rain 100%.\",\n\t\t\"fcttext_metric\":\"Overcast with rain showers at times.
+        High 14C. Winds SE at 10 to 15 km/h. Chance of rain 100%.\",\n\t\t\"pop\":\"100\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":7,\n\t\t\"icon\":\"nt_rain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_rain.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"Mostly cloudy with occasional rain...mainly in
+        the evening. Low 31F. Winds N at 15 to 25 mph. Chance of rain 100%. Winds
+        could occasionally gust over 40 mph.\",\n\t\t\"fcttext_metric\":\"Mostly cloudy.
+        Periods of rain early. Low near 0C. Winds N at 25 to 40 km/h. Chance of rain
+        100%. Winds could occasionally gust over 65 km/h.\",\n\t\t\"pop\":\"100\"\n\t\t}\n\t\t]\n\t\t},\n\t\t\"simpleforecast\":
+        {\n\t\t\"forecastday\": [\n\t\t{\"date\":{\n\t\"epoch\":\"1459551600\",\n\t\"pretty\":\"7:00
+        PM EDT on April 01, 2016\",\n\t\"day\":1,\n\t\"month\":4,\n\t\"year\":2016,\n\t\"yday\":91,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"April\",\n\t\"monthname_short\":\"Apr\",\n\t\"weekday_short\":\"Fri\",\n\t\"weekday\":\"Friday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"EDT\",\n\t\"tz_long\":\"America/New_York\"\n},\n\t\t\"period\":1,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"73\",\n\t\t\"celsius\":\"23\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"53\",\n\t\t\"celsius\":\"12\"\n\t\t},\n\t\t\"conditions\":\"Thunderstorm\",\n\t\t\"icon\":\"tstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/tstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":80,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.17,\n\t\t\"mm\": 4\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.17,\n\t\t\"mm\": 4\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 25,\n\t\t\"kph\":
+        40,\n\t\t\"dir\": \"SSW\",\n\t\t\"degrees\": 199\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 19,\n\t\t\"kph\": 31,\n\t\t\"dir\": \"SSW\",\n\t\t\"degrees\":
+        199\n\t\t},\n\t\t\"avehumidity\": 72,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1459638000\",\n\t\"pretty\":\"7:00
+        PM EDT on April 02, 2016\",\n\t\"day\":2,\n\t\"month\":4,\n\t\"year\":2016,\n\t\"yday\":92,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"April\",\n\t\"monthname_short\":\"Apr\",\n\t\"weekday_short\":\"Sat\",\n\t\"weekday\":\"Saturday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"EDT\",\n\t\"tz_long\":\"America/New_York\"\n},\n\t\t\"period\":2,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"59\",\n\t\t\"celsius\":\"15\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"38\",\n\t\t\"celsius\":\"3\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of Rain\",\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":50,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.12,\n\t\t\"mm\": 3\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.09,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.03,\n\t\t\"mm\":
+        1\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 20,\n\t\t\"kph\":
+        32,\n\t\t\"dir\": \"SSW\",\n\t\t\"degrees\": 207\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 14,\n\t\t\"kph\": 23,\n\t\t\"dir\": \"SSW\",\n\t\t\"degrees\":
+        207\n\t\t},\n\t\t\"avehumidity\": 55,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1459724400\",\n\t\"pretty\":\"7:00
+        PM EDT on April 03, 2016\",\n\t\"day\":3,\n\t\"month\":4,\n\t\"year\":2016,\n\t\"yday\":93,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"April\",\n\t\"monthname_short\":\"Apr\",\n\t\"weekday_short\":\"Sun\",\n\t\"weekday\":\"Sunday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"EDT\",\n\t\"tz_long\":\"America/New_York\"\n},\n\t\t\"period\":3,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"43\",\n\t\t\"celsius\":\"6\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"33\",\n\t\t\"celsius\":\"1\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":20,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 35,\n\t\t\"kph\":
+        56,\n\t\t\"dir\": \"NW\",\n\t\t\"degrees\": 306\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 26,\n\t\t\"kph\": 42,\n\t\t\"dir\": \"NW\",\n\t\t\"degrees\":
+        306\n\t\t},\n\t\t\"avehumidity\": 35,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1459810800\",\n\t\"pretty\":\"7:00
+        PM EDT on April 04, 2016\",\n\t\"day\":4,\n\t\"month\":4,\n\t\"year\":2016,\n\t\"yday\":94,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"April\",\n\t\"monthname_short\":\"Apr\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"EDT\",\n\t\"tz_long\":\"America/New_York\"\n},\n\t\t\"period\":4,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"56\",\n\t\t\"celsius\":\"13\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"31\",\n\t\t\"celsius\":\"-1\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of Rain\",\n\t\t\"icon\":\"chancerain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancerain.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":100,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.43,\n\t\t\"mm\": 11\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.29,\n\t\t\"mm\": 7\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.14,\n\t\t\"mm\":
+        4\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\": 130\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 10,\n\t\t\"kph\": 16,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\":
+        130\n\t\t},\n\t\t\"avehumidity\": 55,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t]\n\t\t}\n\t}\n}\n"
+    http_version:
+  recorded_at: Fri, 01 Apr 2016 11:53:17 GMT
+recorded_with: VCR 3.0.1
